@@ -28,6 +28,12 @@ body {
     overflow-x: hidden;
 }
 
+.texture{
+    background-image: url("../background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 p {
     font-size: 20px;
 }
@@ -62,7 +68,7 @@ h6 {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #000;
     background: #A5CEF1;
 }
 
@@ -150,7 +156,7 @@ header .intro-text .skills {
 }
 
 footer {
-    color: #fff;
+    color: #000;
 }
 
 footer h3 {
