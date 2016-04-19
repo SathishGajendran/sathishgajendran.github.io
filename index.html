@@ -21,7 +21,7 @@
     <div class="container-fluid" style="color: #fff;">
         <h4 class="col-md-12" style="line-height: 36px;vertical-align: middle;">
           <a class="pull-left" href="SathishG.pdf">Resume</a>
-          <span class="pull-right" data-toggle="modal" data-target="#contactme-modal">Contact me</span></h4>
+          <span class="pull-right" data-toggle="modal" data-target="#contactmeModal">Contact me</span></h4>
     </div>
 </nav>
 <header class="transColor">
@@ -68,7 +68,7 @@
 
 
    <!-- Modal -->
-  <div class="modal fade" id="contactme-modal" role="dialog">
+  <div class="modal fade" id="contactmeModal" role="dialog">
     <div class="modal-dialog">
     <!--  -->
       <!-- Modal content-->
@@ -79,7 +79,7 @@
     </div>
     <div class="modal-body">
         <div>
-            <form role="form" id="contactme-form">
+            <form role="form" action="http://myapps-sathishg.rhcloud.com/mail/contactme" method="post">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" name="name">
@@ -92,7 +92,7 @@
                     <label for="message">Message:</label>
                     <textarea class="form-control" name="message" rows="4"></textarea>
                 </div>
-                <button class="btn btn-success" id="contactme-form-submit-btn" >Submit</button>
+                <button type="submit" class="btn btn-success">Submit</button>
             </form>
         </div>
     </div>
@@ -122,23 +122,6 @@
 
 <script src="lib/jquery.min.js"></script>
 <script src="lib/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('#contactme-form').submit(function() {
-            $.ajax({
-                contentType: 'application/json',
-                type: 'POST',
-                url: 'http://myapps-sathishg.rhcloud.com/mail/contactme',
-                data: JSON.stringify({
-                    name: $(this).name.value,
-                    email: $(this).email.value,
-                    message: $(this).message.value,
-                })
-            });
-            return false;
-        });
-    });
-</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
