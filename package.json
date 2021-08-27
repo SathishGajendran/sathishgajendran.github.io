@@ -1,0 +1,26 @@
+{
+  "name": "sathishgajendrangithubio",
+  "version": "1.0.0",
+  "description": "Profile",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SathishGajendran/sathishgajendran.github.io.git"
+  },
+  "author": "Sathish Gajendran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SathishGajendran/sathishgajendran.github.io/issues"
+  },
+  "homepage": "https://github.com/SathishGajendran/sathishgajendran.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

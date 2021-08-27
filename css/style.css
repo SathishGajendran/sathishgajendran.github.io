@@ -14,7 +14,7 @@
 
 .profilePic{
     height: 250px;
-    background-image: url('../profilePic.jpg');
+    background-image: url('https://avatars.githubusercontent.com/u/11366964');
     display: inline-block;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
@@ -73,7 +73,7 @@ header {
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 header img {
@@ -96,8 +96,8 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 180px;
-        padding-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 20px;
     }
 
     header .intro-text .name {
@@ -180,4 +180,9 @@ footer .footer-below {
 .btn:active,
 .btn.active {
     outline: 0;
+}
+
+.description {
+  padding: 0 10px 0 10px;
+  line-height: 32px;
 }
